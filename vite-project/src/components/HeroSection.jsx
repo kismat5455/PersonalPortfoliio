@@ -96,6 +96,7 @@ const HeroSection = () => {
 
     return (
         <section
+            id="home"
             ref={sectionRef}
             className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-gray-900 via-slate-800 to-gray-900  py-12 px-4 sm:px-6 lg:px-8"
         >
@@ -413,21 +414,21 @@ const HeroSection = () => {
                             variants={itemVariants}
                         >
                             <motion.a
-                                href="#"
+                                href="https://github.com/kismat5455"
                                 className="text-gray-400 hover:text-white transition-colors"
                                 whileHover={{ y: -3, scale: 1.2 }}
                             >
                                 <FaGithub size={24} />
                             </motion.a>
                             <motion.a
-                                href="#"
+                                href="https://linkedin.com/in/kismat-ali-2ba3b8232"
                                 className="text-gray-400 hover:text-white transition-colors"
                                 whileHover={{ y: -3, scale: 1.2 }}
                             >
                                 <FaLinkedin size={24} />
                             </motion.a>
                             <motion.a
-                                href="#"
+                                href="#contact"
                                 className="text-gray-400 hover:text-white transition-colors"
                                 whileHover={{ y: -3, scale: 1.2 }}
                             >
