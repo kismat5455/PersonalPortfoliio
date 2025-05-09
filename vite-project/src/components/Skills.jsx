@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
-import { FaReact, FaNodeJs, FaHtml5, FaCss3Alt, FaJs, FaDatabase, FaGit } from 'react-icons/fa';
-import { SiTailwindcss, SiTypescript, SiNextdotjs, SiFirebase, SiMongodb } from 'react-icons/si';
+import { FaReact, FaNodeJs, FaHtml5, FaCss3Alt, FaJs, FaDatabase, FaGit, FaJava, FaPython, FaCheckCircle } from 'react-icons/fa';
+import { SiTailwindcss, SiTypescript, SiNextdotjs, SiFirebase, SiMongodb, SiCplusplus, SiC, SiR, SiExpress, SiFlask, SiRedux, SiBootstrap, SiMysql, SiAndroidstudio, SiSqlite, SiTestinglibrary } from 'react-icons/si';
 import { useState } from 'react';
 
 const Skills = () => {
@@ -19,6 +19,20 @@ const Skills = () => {
     { name: 'MongoDB', icon: SiMongodb, color: 'text-green-500', bg: 'bg-green-900/20' },
     { name: 'SQL', icon: FaDatabase, color: 'text-blue-300', bg: 'bg-blue-900/20' },
     { name: 'Git', icon: FaGit, color: 'text-orange-600', bg: 'bg-orange-900/20' },
+    { name: 'Java', icon: FaJava, color: 'text-red-400', bg: 'bg-red-900/20' },
+    { name: 'Python', icon: FaPython, color: 'text-yellow-300', bg: 'bg-yellow-900/20' },
+    { name: 'C++', icon: SiCplusplus, color: 'text-blue-600', bg: 'bg-blue-900/20' },
+    { name: 'C', icon: SiC, color: 'text-blue-500', bg: 'bg-blue-900/20' },
+    { name: 'R', icon: SiR, color: 'text-blue-400', bg: 'bg-blue-900/20' },
+    { name: 'Express', icon: SiExpress, color: 'text-gray-300', bg: 'bg-gray-900/20' },
+    { name: 'Flask', icon: SiFlask, color: 'text-gray-200', bg: 'bg-gray-900/20' },
+    { name: 'Redux', icon: SiRedux, color: 'text-purple-400', bg: 'bg-purple-900/20' },
+    { name: 'Bootstrap', icon: SiBootstrap, color: 'text-purple-500', bg: 'bg-purple-900/20' },
+    { name: 'MySQL', icon: SiMysql, color: 'text-orange-400', bg: 'bg-orange-900/20' },
+    { name: 'Android Studio', icon: SiAndroidstudio, color: 'text-green-400', bg: 'bg-green-900/20' },
+    { name: 'JUnit', icon: SiTestinglibrary, color: 'text-red-500', bg: 'bg-red-900/20' },
+    { name: 'SQLite', icon: SiSqlite, color: 'text-blue-400', bg: 'bg-blue-900/20' },
+    { name: 'HSQLDB', icon: FaDatabase, color: 'text-cyan-300', bg: 'bg-cyan-900/20' },
   ];
 
   const containerVariants = {

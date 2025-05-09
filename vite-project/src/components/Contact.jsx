@@ -1,5 +1,6 @@
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import { motion } from 'framer-motion';
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -18,21 +19,26 @@ const Contact = () => {
     }));
   };
 
+  const form = useRef();
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsSubmitting(true);
     
     try {
-      // Simulate form submission
-      await new Promise(resolve => setTimeout(resolve, 1500));
+      await emailjs.sendForm(
+        'service_f0yhmhs', 
+        'template_5c2hm2c', 
+        form.current,
+        'Ll34ftCAe2GGrk8AF' 
+      );
       setSubmitStatus('success');
-      // Reset form
       setFormData({ name: '', email: '', message: '' });
     } catch (error) {
+      console.error('Error sending email:', error);
       setSubmitStatus('error');
     } finally {
       setIsSubmitting(false);
-      // Clear status after 3 seconds
       setTimeout(() => {
         setSubmitStatus(null);
       }, 3000);
@@ -64,7 +70,7 @@ const Contact = () => {
           >
             <h3 className="text-2xl font-semibold text-white mb-6">Send a Message</h3>
             
-            <form onSubmit={handleSubmit}>
+            <form ref={form} onSubmit={handleSubmit}>
               <div className="mb-6">
                 <label htmlFor="name" className="block text-gray-300 mb-2">Your Name</label>
                 <input

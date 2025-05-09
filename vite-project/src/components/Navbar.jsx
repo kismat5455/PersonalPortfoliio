@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { FaBars, FaTimes, FaLaptopCode } from 'react-icons/fa';
+import { FaBars, FaTimes } from 'react-icons/fa';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -139,7 +139,7 @@ const Navbar = () => {
             whileHover="hover"
           >
             <span className="flex items-center justify-center w-10 h-10 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg">
-              <FaLaptopCode className="text-white text-xl" />
+              <span className="text-white text-xl font-bold">K</span>
             </span>
           </motion.a>
 

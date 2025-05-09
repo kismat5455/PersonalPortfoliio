@@ -370,7 +370,10 @@ const HeroSection = () => {
                                 />
 
 
-                                <motion.button
+                                <motion.a
+                                    href="https://github.com/kismat5455"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
                                     className="relative px-8 py-4 bg-gradient-to-r from-blue-500 to-blue-600 text-white font-semibold rounded-lg transition-all duration-300 shadow-lg flex items-center gap-2 overflow-hidden group"
                                 >
                                     <span>View My Work</span>
@@ -396,17 +399,19 @@ const HeroSection = () => {
                                             repeatDelay: 1
                                         }}
                                     />
-                                </motion.button>
+                                </motion.a>
                             </motion.div>
 
-                            <motion.button
+                            <motion.a
+                                href="/Resume.pdf"
+                                download
                                 className="px-6 py-3 border border-blue-500 text-blue-400 hover:bg-blue-500/10 font-medium rounded-lg transition-all duration-300 flex items-center gap-2"
                                 whileHover={{ scale: 1.05 }}
                                 whileTap={{ scale: 0.95 }}
                             >
                                 <span>Download Resume</span>
                                 <FaDownload />
-                            </motion.button>
+                            </motion.a>
                         </motion.div>
 
                         <motion.div
